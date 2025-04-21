@@ -1,0 +1,4 @@
+package com.liu.dto;
+
+public class IllnessDao {
+}
