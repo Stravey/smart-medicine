@@ -1,4 +1,4 @@
-package com.liu.dto;
+package com.liu.dao;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
@@ -9,14 +9,16 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 分页数据库访问
+ * 药品数据库访问
  *
  * @author rui
  */
 @Repository
 public interface MedicineDao extends BaseMapper<Medicine> {
+
     /**
      * 根据疾病查询药物
      */
     List<Map<String,Object>> findMedicineList(Integer illnessId);
+
 }
