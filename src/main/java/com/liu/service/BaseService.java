@@ -2,12 +2,14 @@ package com.liu.service;
 
 import com.liu.dao.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  * 基础服务类
  *
  * @author rui
  */
+@Component
 public abstract class BaseService<T> implements IService<T> {
 
     @Autowired
