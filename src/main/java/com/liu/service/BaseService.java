@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
  *
  * @author rui
  */
+@SuppressWarnings("all")
 @Component
 public abstract class BaseService<T> implements IService<T> {
 
