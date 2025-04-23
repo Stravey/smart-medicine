@@ -17,6 +17,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
+/**
+ * 基础控制器
+ *
+ * @author <a href="http://xuewei.world/about">XUEW</a>
+ */
+@SuppressWarnings("all")
 @Component
 public class BaseController<T> {
 
