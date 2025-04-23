@@ -20,7 +20,7 @@ import java.util.Map;
  */
 @SuppressWarnings("all")
 @Service
-public class UserService extends BaseService<User {
+public class UserService extends BaseService<User> {
 
     @Autowired
     protected UserDao userDao;
