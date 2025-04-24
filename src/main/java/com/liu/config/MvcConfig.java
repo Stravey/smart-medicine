@@ -56,7 +56,7 @@ public class MvcConfig implements WebMvcConfigurer, ErrorPageRegistrar {
 //                        "/","/index","/index.html","/join.html","/home","/material","/materials","/admin/**",
 //                        "/login","/register",
 //                        "/error400Page","/error401Page","/error404Page","/error500Page",
-//                        "/**/front/**", "/asserts/**","/**/*.css", "/**/*.js", "/**/*.png ",
+//                        "/**/front/**", "/asserts/**", "/**/*.js", "/**/*.png ",
 //                        "/**/*.jpg", "/**/*.jpeg","/**/*.gif", "/**/fonts/*", "/**/*.svg");
 //    }
 }
