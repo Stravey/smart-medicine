@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>智慧医药系统 - 无权限访问</title>
+    <title>Ayurvedic - Medical Template</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="images/cropped-favicon-32x32.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/cropped-favicon-32x32.png"/>
 
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
@@ -13,6 +13,13 @@
 
     <link href="assets/css/plugin.css" rel="stylesheet" type="text/css"/>
 
+    <link href="assets/css/dashboard.css" rel="stylesheet" type="text/css"/>
+
+    <link href="assets/fonts/flaticon.css" rel="stylesheet" type="text/css"/>
+
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css"/>
+
+    <link rel="stylesheet" href="assets/fonts/line-icons.css" type="text/css"/>
     <link rel="stylesheet" href="common/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
@@ -24,23 +31,27 @@
 
 <div th:replace="common/common-bar::#header"></div>
 
-<section class="error-mg">
+<div id="dashboard">
     <div class="container">
-        <div class="search-again text-center p-5 pb-0">
-            <div class="sc-title-two text-center mb-6">
-                <h4 class="cl-grey">抱歉，您没有权限访问此资源</h4>
-                <h1>401</h1>
-            </div>
-            <div class="w-lg-75 m-auto">
-                <div class="side-search position-relative overflow-hidden rounded-1 w-lg-50 m-auto mt-4 mb-4">
-                    <input type="text" class="form-control" id="search" placeholder="搜索一下 ..."/>
-                    <a href="#" class="search-btn sh-hover bg-lgreen"><i class="fa fa-search"></i></a>
+        <div class="dashboard-main">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div th:replace="common/common-bar::#dashboard-sidebar"></div>
+                </div>
+                <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                    <div class="dashboard-content">
+                        <div class="dashboard-form mb-4">
+                            <div class="row">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a href="index" class="btn">返回首页</a>
         </div>
+
     </div>
-</section>
+</div>
 
 <div th:replace="common/common-bar::#back"></div>
 
@@ -54,8 +65,11 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/plugin.js"></script>
 <script src="assets/js/main.js"></script>
-<script src="assets/js/custom-swiper.js"></script>
 <script src="assets/js/custom-nav.js"></script>
+<script src="assets/js/jpanelmenu.min.js"></script>
+<script src="assets/js/dashboard-custom.js"></script>
+<script src="common/utils/reg.js"></script>
+<script src="common/layer/layer.js"></script>
 <script src="common/custom.js"></script>
 </body>
 </html>
